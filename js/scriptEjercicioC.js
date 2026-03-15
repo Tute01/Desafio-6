@@ -1,4 +1,4 @@
-console.log("Ejercio b")
+console.log("Ejercio c")
 
 var cantidadDeGatos= +prompt("Ingrese la cantidad de gatos"); 
 
@@ -16,7 +16,11 @@ while(Number.isNaN(cantidadDepasos) ||cantidadDepasos<1 || cantidadDepasos % 1 !
 
 
 for(  var i=0; i<cantidadDeGatos;i++) {
-    var imprimir= "Gato #"+(i+1)+":🐈";
+    var imprimir= "Gato #"+(i+1)+": 🐈";
+    if(i%2!=0){
+        imprimir+="⬛";
+    }
+ 
    for(var j=0;j<cantidadDepasos;j++){
         imprimir += "🐾";
    }
